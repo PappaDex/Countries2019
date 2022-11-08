@@ -48,14 +48,9 @@ namespace Countries
         int populacija = (int)item.GetValue("population");
         float area = (float)item.GetValue("area");
         string regija = (string)item.GetValue("region");
-                    JObject outer =item["currencies"].FirstOrDefault().Value<JObject>() ;
-                    JObject inner = outer["code"].Value<JObject>();
-                    int i = 0;
 
-                   string valuta=(string) inner.GetValue("code");
                     
-                    
-        CountriesRest.Add(new Country(kod, ime, kapital, populacija, area, regija,valuta));
+        CountriesRest.Add(new Country(kod, ime, kapital, populacija, area, regija));
                     ; };
                 
 }

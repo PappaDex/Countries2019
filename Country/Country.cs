@@ -9,9 +9,8 @@ namespace Countries
         public int Population { get; set; }
         public float Area { get; set; }
         public string Region { get; set; }
-        public string Currency { get; set; }
 
-        public Country(string _code, string _name, string _capital, int _population, float _area, string _region,string _currency)
+        public Country(string _code, string _name, string _capital, int _population, float _area, string _region)
         {
             Code = _code;
            
@@ -20,7 +19,7 @@ namespace Countries
             Population = _population;
             Area = _area;
             Region = _region;
-            Currency = _currency;
+     
         }
     }
 }
